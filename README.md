@@ -19,8 +19,13 @@ Introduccion a SQL
 
 ![consulta_1](2_oct.png 'consulta_1)!
 
-## Consulta N°.2
+### Consulta N°.2
 
 2. Para visualizar solamente la indentificacion de Cliente: 'SELECT indentifficación FROM Cliente'
 
 ![consulta_2](consulta-2 'consulta_2)!
+### Consulta N°3
+
+3. Si se desea obtener los registro mayor o igual  a 150, se debe utilizar la cláusula 'WHERE' que especifica las condiciones que se deban seleccionar : 'SELECT * FROM cLIENTES WHERE indentificacion=150'
+
+![consulta_3](consulta-3 'consulta_3)!
