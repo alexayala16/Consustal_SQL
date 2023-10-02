@@ -19,3 +19,8 @@ Introduccion a SQL
 
 ![consulta_1](2_oct.png 'consulta_1)!
 
+## Consulta N°.2
+
+2. Para visualizar solamente la indentificacion de Cliente: 'SELECT indentifficación FROM Cliente'
+
+![consulta_2](consulta-2 'consulta_2)!
