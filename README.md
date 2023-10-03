@@ -9,7 +9,7 @@ Introduccion a SQL
 - Permiteseseclaccionar datos de una tabla.
 - Su formato es 
 
-### Consulta N°.1
+### Consulta N°1
 
 1. Para visualizar toda la informacion que todo la tabla de Clientes se puede concluir con uno de los campos de la tabla.
 
@@ -18,7 +18,7 @@ Introduccion a SQL
 
 ![Consulta 1](IMGs/Consulta1.png "consulta_1")
 
-### Consulta N°.2
+### Consulta N°2
 
 2. Para visualizar solamente la indentificacion de Cliente: 'SELECT indentifficación FROM Cliente'
 
@@ -91,4 +91,33 @@ Introduccion a SQL
 
 ### Eleminación N°2
 
-2. 
+2. Eliminar los registros cuya indentificación sea igual a 116.
+
+'DELETE FROM Cliente WHERE indentificación = 116'
+
+## Instrucción UPDATE
+
+- Permite actualizar un campo de una tabla.
+- Su formato 'UPDATE nombre tabla SET nombre_campo = valor'
+
+### Actualización N°1
+
+1. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya indentificación  es 114.
+
+'UPDATE Cliente SET ciudad_nac = 'pereida' WHERE  indentificación=114'
+
+![Actuslización 1](IMGs/Actualización1.png "Actualización_1")
+
+## Creación tabla Pedido
+### Diccionario de datos
+|Campo|Tipo de dato|Longitud|
+|-----|------------|--------|
+|***no_pedido***|varchar|15|
+|iden_Cliente|varchar|15|
+|fecha_conpra|date||
+|fecha_vencimiento|date||
+|observacion|varchar|30|
+
+### Modelo Entidad-Relación
+
+![Modelo](IMGs/Modelo.png "Modelo")
