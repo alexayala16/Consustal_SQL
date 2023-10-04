@@ -134,3 +134,9 @@ Introduccion a SQL
 'SELECT Cliente.Indentificación, Cliente.Nombres, Cliente.Apellidos, Pedido.no_pedido, Pedido.Fecha_vencimiento, Pedido.Observación FROM Cliente INNER JOIN Pedido ON Cliente.Indentificación =Pedido.Ide_cliente'
 
 ![Inner join 1](IMGs/Inner_join_1.png "Inner join 1")
+
+2. Para visualizar todos los campos de las tablas Cliente y Pedido donde indentificación sea mayor que 100, se debe revisar la siguiente instrucción:
+
+'SELECT Cliente.*, Pedido.* FROM Cliente INNER JOIN Pedido ON Cliente.identificación = Pedido.iden_Cliente Where Cliente.identificación>100'
+
+![Inner join 1](IMGs/Inner_join_2.png "Inner join 1")
