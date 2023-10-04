@@ -106,7 +106,7 @@ Introduccion a SQL
 
 'UPDATE Cliente SET ciudad_nac = 'pereida' WHERE  indentificación=114'
 
-![Actuslización 1](IMGs/Actualización1.png "Actualización_1")
+![Actuslización](IMGs/Actualización.png "Actualización")
 
 ## Creación tabla Pedido
 ### Diccionario de datos
@@ -121,3 +121,16 @@ Introduccion a SQL
 ### Modelo Entidad-Relación
 
 ![Modelo](IMGs/Modelo.png "Modelo")
+
+## Operador INNER JOIN
+
+- Permite obtener datos de dos o más tablas.
+- Cuando se realiza la concatenación de las tablas, no necesariamente se deben mostrar todos los datos de la tabla.
+-Su formato es:
+'SELECT tabla1.campo, tabla2.campo,...FROM tabla_principal INNER JOIN tabla_secundaria ON campo_comun_tabla1 = campo_comun_tabla2'
+
+1. Para visualizar los campos indentificación,nombre, apellidos de la tabla cliente y N°_pedido, fecha_compra, fecha_vencimiento y observación de la tabla Pedido, se debe realizar la siguiente instrucción:
+
+'SELECT Cliente.Indentificación, Cliente.Nombres, Cliente.Apellidos, Pedido.no_pedido, Pedido.Fecha_vencimiento, Pedido.Observación FROM Cliente INNER JOIN Pedido ON Cliente.Indentificación =Pedido.Ide_cliente'
+
+![Inner join 1](IMGs/Inner_join_1.png "Inner join 1")
